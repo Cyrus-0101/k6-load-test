@@ -20,7 +20,6 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "dotenv": "^16.0.1",
     "faker": "^4.1.0"
   }
 }
