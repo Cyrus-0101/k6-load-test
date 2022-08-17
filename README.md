@@ -2,7 +2,9 @@
 - This script details a step by step load, stress and spike test. We use Webpack to bundle up our scripts and be able to add faker to our script to send data.
 
 ## Installation:
-- Begin by running
+Ensure you have [k6](https://k6.io/docs/getting-started/installation/), globally installed before running the project.
+
+- After installing k6 begin by running:
 
 ```sh
     npm i
