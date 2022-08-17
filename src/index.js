@@ -2,22 +2,7 @@ import http from "k6/http";
 import * as faker from "faker/locale/en_US";
 
 const setObj = {
-  farmerId: faker.random.uuid(),
-  whReceiptId: faker.random.uuid(),
-  applicantName: faker.name.firstName(),
-  warehouseName: faker.company.companyName(),
-  applicantPhoneNo: faker.random.uuid(),
-  applicantEmail: faker.internet.email(),
-  timestamp: faker.date.past(),
-  userAddress: faker.address.city(),
-  warehouseAddress: faker.company.bsBuzz(),
-  whrReceiptId: faker.random.uuid(),
-  salesOrder: faker.random.uuid(),
-  grade: faker.company.companyName(),
-  unit: faker.company.companyName(),
-  warehouseId: faker.random.uuid(),
-  numberOfPackges: faker.random.uuid(),
-  commodity: faker.commerce.department(),
+  userId: faker.random.uuid(),
 };
 
 export const options = {
@@ -33,5 +18,5 @@ export const options = {
 
 export default function () {
   //  http.get("http://test.k6.io");
-  http.post("https://uat-warehouses.whrrl.in/", setObj);
+  http.post("http://test.k6.io", setObj);
 }
